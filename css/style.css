@@ -77,7 +77,10 @@ h3 {
     display: inline-block;
     text-decoration: none;
     color: var(--black);
-    transition: color var(--main-transition);
+}
+
+.main-nav a:hover{
+    color: var(--blue)
 }
 
 button {
@@ -86,7 +89,8 @@ button {
     color:  var(--blue);
     background-color: transparent;
     cursor: pointer;
-    border: 8px;
+    border-radius: 8px;
+    text-transform: lowercase;
 }
 
 .social, .contact  {
@@ -108,7 +112,6 @@ button {
     border: 1px solid var(--blue);
     border-radius: 50%;
     background-color: var(--white);
-    transition: background-color var(--main-transition);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -152,7 +155,6 @@ button {
 .contact-link {
     display: block;
     padding: 5px 0 5px 42px;
-    transition: color var(--main-transition);
     background-position: left;
     background-repeat: no-repeat;
 }
@@ -210,4 +212,16 @@ button {
 }
 .skill-item_python {
     background-image: url("../img/python.svg");
+}
+
+.subtitle{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 120%;
+    color: var(--blue);
+    margin-top: 0;
+    margin-bottom: 0;
+    
 }

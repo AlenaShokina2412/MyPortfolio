@@ -25,7 +25,7 @@ footer {
     background-color: var(--black);
 }
 
-button {
+button, a {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -33,16 +33,9 @@ button {
     color: var(--black);
 }
 
-a {
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: var(--black);
-}
 
 h1 {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -51,10 +44,26 @@ h1 {
 }
 
 h2 {
-    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 120%;
     color: var(--black);
+}
+
+h3 {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--black);
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }

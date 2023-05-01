@@ -118,23 +118,23 @@ button {
 }
 
 .social-link_github {
-    background-image: url("/img/github.svg");
+    background-image: url("../img/github.svg");
 }
 
 .social-link_gitlab {
-    background-image: url("/img/gitlab.svg");
+    background-image: url("../img/gitlab.svg");
 }
 
 .social-link_instagram {
-    background-image: url("/img/instagram.svg");
+    background-image: url("../img/instagram.svg");
 }
 
 .social-link_telegram {
-    background-image: url("/img/telegram.svg");
+    background-image: url("../img/telegram.svg");
 }
 
 .social-link_vk {
-    background-image: url("/img/vk.svg");
+    background-image: url("../img/vk.svg");
 }
 .visually-hidden {
     position: absolute;
@@ -162,11 +162,11 @@ button {
 }
 
 .contact-link_phone {
-    background-image: url("/img/phone.svg");
+    background-image: url("../img/phone.svg");
 }
 
 .contact-link_mail {
-    background-image: url("/img/email.svg");
+    background-image: url("../img/email.svg");
 }
 .main-photo {
     border-radius: 50%;
@@ -200,14 +200,14 @@ button {
     text-transform: lowercase;
 }
 .skill-item_html {
-    background-image: url("/img/html.svg");
+    background-image: url("../img/html.svg");
 }
 .skill-item_css {
-    background-image: url("/img/css.svg");
+    background-image: url("../img/css.svg");
 }
 .skill-item_cpp {
-    background-image: url("/img/c++.svg");
+    background-image: url("../img/c++.svg");
 }
 .skill-item_python {
-    background-image: url("/img/python.svg");
+    background-image: url("../img/python.svg");
 }

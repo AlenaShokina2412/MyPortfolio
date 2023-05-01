@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Мое портфолио">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="main-header">
         <a><img src="img/main-logo.svg" width="60" height="60" alt="logo"></a>
-        <nav>
+        <nav class="main-nav">
           <a href="#aboutMe">Обо мне</a>
           <a href="#skills">Навыки</a>
           <a href="#interests">Интересы</a>
@@ -25,16 +29,16 @@
           <section>
               <h1>Алена Шокина</h1>
               <p>Программист</p>
-              <img src="img/foto.jpg" width="300" height="300" alt="my photo">
+              <img class="main-photo" src="img/foto.jpg" width="300" height="300" alt="my photo">
             </section>
-            <section id="aboutMe">
+            <section id="aboutMe" class="aboutMe">
               <h2>Пара слов обо мне</h2>
               <p>Привет ✌</p>
               <p>В данный момент я учусь в магистратуре МФ МГТУ им. Н. Э. Баумана по направлению «Информатика и вычислительная техника».</p>
               <p>В прошлом году защитила диплом бакалавра на тему «Разработка очень сложного программного комплекса для супер-важной цели». Работа была высоко оценена комиссией.</p>
               <p>Также я уже успела поработать в качестве программист-консультанта в 1C франчайзинг и в будущем планирую развиваться в этом направлении.</p>
             </section>
-            <section id="skills">
+            <section id="skills" class="skills">
               <div>
                 <h2>Мои навыки</h2>
                 <div>
@@ -43,46 +47,42 @@
                   <button>По уровню</button>
                 </div>
               </div>
-              <dl>
-                <dt>html</dt>
-                <dd>
+              <dl class="skill-list">
+                <dt class="skill-item skill-item_html">html</dt>
+                <dd class="skill-level">
                   <div style="width: 40%;">40%</div>
                 </dd>
-                <dt>css</dt>
-                <dd>
+                <dt class="skill-item skill-item_css">css</dt>
+                <dd class="skill-level">
                   <div style="width: 40%;">40%</div>
                 </dd>
-                <dt>python</dt>
-                <dd>
+                <dt class="skill-item skill-item_python">python</dt>
+                <dd class="skill-level">
                   <div style="width: 40%;">40%</div>
                 </dd>
-                <dt>c++</dt>
-                <dd>
+                <dt class="skill-item skill-item_cpp">c++</dt>
+                <dd class="skill-level">
                   <div style="width: 40%;">40%</div>
                 </dd>
               </dl>
             </section>
-            <section id="interests">
+            <section id="interests" class="interests">
               <h2>Мои интересы</h2>
               <p>Наибольший интерес для меня в данный момент представляет программирование и изучение искусственного интеллекта.</p>
               <p>Но помимо учёбы и работы я также люблю играть на барабанах и читать зарубежную классику.</p>
             </section>
-            <section id="contacts">
+            <section id="contacts" class="contacts">
               <h2>Мои контакты</h2>
-              <div>
-                <a href="tel:+79991234567">
-                  (999) 123-45-67
-                </a>
-                <a href="mailto:shokinaa@kek.ru">
-                  shokinaa@kek.ru
-                </a>
-              </div>
-              <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">Gitlab</a></li>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Telegram</a></li>
-                <li><a href="">VK</a></li>
+              <ul class="contact">
+                <li><a class="contact-link contact-link_phone" href="tel:+79991234567">(999) 123-45-67</a></li>
+                <li><a class="contact-link contact-link_mail"  href="mailto:shokinaa@kek.ru">shokinaa@kek.ru</a></li>
+              </ul>
+              <ul class="social">
+                <li><a class="social-link social-link_github"><span class="visually-hidden">Github</span></a></li>
+                <li><a class="social-link social-link_gitlab"><span class="visually-hidden">Gitlab</span></a></li>
+                <li><a class="social-link social-link_instagram"><span class="visually-hidden">Instagram</span></a></li>
+                <li><a class="social-link social-link_telegram"><span class="visually-hidden">Telegram</span></a></li>
+                <li><a class="social-link social-link_vk"><span class="visually-hidden">VK</span></a></li>
               </ul>
             </section>
           </div>

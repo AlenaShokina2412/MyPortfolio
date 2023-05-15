@@ -27,6 +27,12 @@ body {
 footer {
     color: var(--white);
     background-color: var(--black);
+    margin: 0;
+}
+
+.main-footer .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 button, a {
@@ -49,6 +55,8 @@ h1 {
     font-size: 60px;
     line-height: 110%;
     color: var(--black);
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -58,6 +66,7 @@ h2 {
     font-size: 30px;
     line-height: 120%;
     color: var(--black);
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -97,10 +106,20 @@ button {
     text-transform: lowercase;
 }
 
-.social, .contact  {
+.social  {
+    display: flex;
+    gap: 20px;
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+.contact  {
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 40px;
 }
 
 .social li,.contact li {
@@ -191,7 +210,7 @@ button {
     background-size: 30px;
 }
 .skill-level {
-    margin: 4px 0 16px;
+    margin: 4px 0 20px;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--blue);
@@ -226,8 +245,8 @@ button {
     line-height: 120%;
     color: var(--blue);
     margin-top: 0;
-    margin-bottom: 0;
-    
+    margin: 0;
+    margin-bottom: 40px;    
 }
 
 .main-header{
@@ -243,12 +262,52 @@ button {
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
-    gap: 70px;
+    gap: 74px;
     margin-bottom: 120px;
     flex-direction: row;
 }
 
 .name h1{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 0;
+}
+
+.text-wrapper{
+    max-width: 800px;
+}
+
+.text-wrapper p+p {
+    margin-top: 15px;
+}
+
+.skill-top{
+    display: flex;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    margin-bottom: 40px;
+    gap: 40px;
+}
+
+.skill-top h2{
+    margin: 0; 
+}
+
+.skill-top div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contacts, .interests, .skills, .aboutMe {
+    margin-bottom: 120px;
+}
+
+p{
+    margin: 0;
+    margin-bottom: 0;
+}
+
+p + p {
+    margin-top: 15px;
 }

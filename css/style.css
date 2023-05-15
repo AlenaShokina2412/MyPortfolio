@@ -210,7 +210,7 @@ button {
     background-size: 30px;
 }
 .skill-level {
-    margin: 4px 0 20px;
+    margin: 4px 0 16px;
     padding: 2px;
     font-size: 0;
     border: 1px solid var(--blue);

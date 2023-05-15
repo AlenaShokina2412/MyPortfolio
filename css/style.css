@@ -5,6 +5,10 @@
     --white: #FFFFFF;
 }
 
+nav{
+    display: flex;
+}
+
 *, 
 *::before, 
 *::after {
@@ -224,4 +228,27 @@ button {
     margin-top: 0;
     margin-bottom: 0;
     
+}
+
+.main-header{
+    display: flex;
+    gap: 40px;
+    padding-top: 60px;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 120px;
+    flex-direction: row;
+}
+
+.name h1{
+    margin-bottom: 20px;
+    margin-top: 0;
 }

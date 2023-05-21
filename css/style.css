@@ -41,6 +41,7 @@ button, a {
     font-weight: 400;
     font-size: 20px;
     color: var(--black);
+    line-height: 100%;
 }
 
 button:hover {
@@ -89,7 +90,7 @@ h3 {
     padding: 10px 15px;
     display: inline-block;
     text-decoration: none;
-    color: var(--black);
+    color: var(--black)    
 }
 
 .main-nav a:hover{
@@ -101,9 +102,10 @@ button {
     border: 1px solid var(--blue);
     color:  var(--blue);
     background-color: transparent;
-    cursor: pointer;
     border-radius: 8px;
+    cursor: pointer;
     text-transform: lowercase;
+    line-height: 100%;
 }
 
 .social  {
@@ -180,6 +182,7 @@ button {
     padding: 5px 0 5px 42px;
     background-position: left;
     background-repeat: no-repeat;
+    text-decoration: none;
 }
 
 .contact-link:hover {
@@ -194,6 +197,7 @@ button {
     background-image: url("../img/email.svg");
 }
 .main-photo {
+    display: block;
     border-radius: 50%;
 }
 
@@ -241,12 +245,13 @@ button {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
+    font-size: 40px;
     line-height: 120%;
     color: var(--blue);
-    margin-top: 0;
+     margin-top: 0;
     margin: 0;
-    margin-bottom: 40px;    
+    padding: 0;
+    margin-bottom: 0;    
 }
 
 .main-header{
@@ -257,18 +262,22 @@ button {
     margin-bottom: 120px;
 }
 
+.main-header{
+    line-height: 0;
+}
+
 .name{
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
     align-items: center;
-    gap: 74px;
+    gap: 70px;
     margin-bottom: 120px;
     flex-direction: row;
 }
 
 .name h1{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 

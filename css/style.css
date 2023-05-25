@@ -395,7 +395,7 @@ p + p {
         font-size: 50px;
     }   
 }
-@media screen and (max-width: 650px) {   
+@media screen and (max-width: 651px) {   
     h1 {
         font-size: 32px;
     }
@@ -495,16 +495,15 @@ p + p {
     }
 
     .name h1{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .contact{
         margin-bottom: 30px;
     }
-    
+
     .main-footer .container{
         padding-bottom: 30px;
         padding-top: 30px;
-        
     }
  
 }

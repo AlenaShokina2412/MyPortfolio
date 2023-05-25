@@ -320,3 +320,117 @@ p{
 p + p {
     margin-top: 15px;
 }
+
+@media screen and (max-width: 1024px) {   
+    h1 {
+        font-size: 50px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 768px) {   
+	h1 {
+        font-size: 50px;
+    }   
+}
+@media screen and (max-width: 650px) {   
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    button, a, body {
+        font-size: 14px;
+    }
+
+    .name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+    }
+
+    .name img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .main-header a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 0px;
+        gap: 20px;
+
+    }
+
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 0;
+    }
+
+
+    .nav-btn{
+        display: block;
+        width: 30PX;
+        height: 30px;
+        border: 0;
+    }
+
+    .nav-btn_close{
+        background-image: url(../img/menu-btn/close.svg);
+    }
+    
+    .nav-btn_open{
+        background-image: url(../img/menu-btn/menu.svg);
+    }
+
+    .main-header-wrap{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        gap: 20px;
+    }
+    
+ 
+}
+@media screen and (max-width: 360px) {   
+	h1 {
+        font-size: 32px;
+    }   
+}
+
+.nav-btn{
+    display: none;       
+}

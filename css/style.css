@@ -26,7 +26,7 @@ body {
 
 footer {
     color: var(--white);
-    background-color: var(--black);
+    background-color: var(--blue);
     margin: 0;
 }
 
@@ -76,7 +76,7 @@ h3 {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    color: var(--black);
+    color: var(--blue);
 }
 
 .container {
@@ -122,6 +122,7 @@ button {
     padding: 0;
     list-style-type: none;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .social li,.contact li {
@@ -297,6 +298,7 @@ button {
     margin: 0;
     margin-bottom: 40px;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .skill-top h2{
@@ -328,6 +330,63 @@ p + p {
 
     body {
         font-size: 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+    button, a, body {
+        font-size: 16px;
+    }
+
+    .name img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-header img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skill-top{
+        margin-bottom: 40px;
+    }
+
+    .contacts, .interests, .skills, .aboutMe, .name, .main-header {
+        margin-bottom: 80px;
+    }
+
+    .main-nav{
+        padding: 0;
+        gap: 0px;
+    }
+    .main-nav a{
+        padding: 10px 15px 10px 15px;
+    }
+
+    .name{
+        gap:50px;
+    }
+
+    .contacts a{
+        padding: 7px 0 7px 42px;
     }
     
 }
@@ -364,7 +423,7 @@ p + p {
         justify-content: center;
         align-items: center;
         padding: 0px;
-        gap: 10px;
+        gap: 30px;
     }
 
     .name img{
@@ -384,7 +443,6 @@ p + p {
         align-items: center;
         padding: 20px 0px 0px;
         gap: 20px;
-
     }
 
     .main-nav{
@@ -394,6 +452,12 @@ p + p {
         align-items: center;
         padding: 0px;
         gap: 0;
+    }
+
+    .main-nav a{
+        padding: 19.9px 30px;
+        gap: 0;
+        text-align: center;
     }
 
 
@@ -422,13 +486,85 @@ p + p {
         padding: 0px;
         gap: 20px;
     }
+
+    .contacts, .interests, .skills, .aboutMe, .name, .main-header {
+        margin-bottom: 60px;
+    }
+    .name{
+        text-align: center;
+    }
+
+    .name h1{
+        margin-bottom: 20px;
+    }
+    .contact{
+        margin-bottom: 30px;
+    }
     
+    .main-footer .container{
+        padding-bottom: 30px;
+        padding-top: 30px;
+        
+    }
  
 }
 @media screen and (max-width: 360px) {   
-	h1 {
-        font-size: 32px;
-    }   
+	  
+
+    .contact{
+        flex-direction: column;
+        gap:15px;
+        margin-bottom: 20px;
+    }
+
+    .main-header,.skills {
+        margin-bottom: 50px;
+    }
+
+
+    .social{
+        gap: 15px;
+    }
+
+    .contact li a{
+        padding: 8px 0px 8px 42px;
+    }
+    .skill-level{
+        margin-top: 8px;
+        margin-bottom: 22px;
+    }
+    .skill-top{
+        gap: 20px;
+        line-height: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .contacts, .interests,  .aboutMe, .name{
+        margin-bottom: 50px;
+    }
+    
+
+}
+
+@media screen and (max-width: 380px) {  
+
+    .skill-top{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-top div{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .skill-top div button{
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .nav-btn{

@@ -114,6 +114,8 @@ button {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    
+    flex-wrap: wrap;
 }
 .contact  {
     display: flex;
@@ -140,6 +142,7 @@ button {
     background-color: var(--white);
     background-position: center;
     background-repeat: no-repeat;
+
 }
 
 .social-link:hover {
@@ -322,6 +325,9 @@ p{
 p + p {
     margin-top: 15px;
 }
+.nav-btn{
+    display: none;       
+}
 
 @media screen and (max-width: 1024px) {   
     h1 {
@@ -375,7 +381,7 @@ p + p {
 
     .main-nav{
         padding: 0;
-        gap: 0px;
+        gap: 0;
     }
     .main-nav a{
         padding: 10px 15px 10px 15px;
@@ -422,7 +428,7 @@ p + p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
+        padding: 0;
         gap: 30px;
     }
 
@@ -441,7 +447,7 @@ p + p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 0px 0px;
+        padding: 20px 0 0;
         gap: 20px;
     }
 
@@ -450,7 +456,7 @@ p + p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0px;
+        padding: 0;
         gap: 0;
     }
 
@@ -463,7 +469,7 @@ p + p {
 
     .nav-btn{
         display: block;
-        width: 30PX;
+        width: 30px;
         height: 30px;
         border: 0;
     }
@@ -483,7 +489,7 @@ p + p {
         justify-content: space-between;
         display: flex;
         flex-direction: row;
-        padding: 0px;
+        padding: 0;
         gap: 20px;
     }
 
@@ -526,7 +532,7 @@ p + p {
     }
 
     .contact li a{
-        padding: 8px 0px 8px 42px;
+        padding: 8px 0 8px 42px;
     }
     .skill-level{
         margin-top: 8px;
@@ -566,6 +572,4 @@ p + p {
     }
 }
 
-.nav-btn{
-    display: none;       
-}
+

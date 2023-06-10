@@ -22,6 +22,7 @@ body {
     font-size: 20px;
     line-height: 150%;
     color: var(--black); 
+    background-color: var(--white);
 }
 
 footer {
@@ -139,7 +140,7 @@ button {
     height: 50px;
     border: 1px solid var(--blue);
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: #CCCCCC;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -561,4 +562,16 @@ p + p {
     }
 }
 
+.dark-theme{
+    --black: #CCCCCC;
+    --white: #031923;
+}
+
+.dark-theme .contact-link_mail{
+    background-image: url(../img/d_email.svg);
+}
+
+.dark-theme .contact-link_phone{
+    background-image: url(../img/d_phone.svg);
+}
 

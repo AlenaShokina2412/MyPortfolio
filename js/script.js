@@ -51,8 +51,7 @@ const skill = {
         
             
         
-            parentElement.appendChild(Dta);
-            parentElement.appendChild(Dda);
+            parentElement.append(Dta,Dda);
         
             Dda.appendChild(Diva);
             

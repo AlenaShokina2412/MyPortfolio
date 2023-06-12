@@ -576,3 +576,6 @@ p + p {
     background-color: #CCCCCC;
 }
 
+.dark-theme .social-link:hover{
+    background-color: var(--yellow);
+}

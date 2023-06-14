@@ -60,5 +60,13 @@ const skill = {
 };
 skill.generateList(document.querySelector("dl.skill-list"));
 
+sortBtnBlock = document.querySelector("div.skills-sort");
 
+sortBtnBlock.addEventListener('click', (e) => {
+    let target = e.target;
+    console.log(target);
+    if (target.nodeName === "BUTTON"){
+        console.log(target);
+    } 
+});
 

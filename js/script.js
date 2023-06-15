@@ -31,9 +31,11 @@ const skill = {
             iconPath: "img/1c.svg",
         }
     ],
-
+    isSorted: false,
     generateList : function(parentElement) {
+        parentElement.innerHTML = '';
         this.data.forEach(element => {
+            
             const Dta = document.createElement('dt');
             const Dda = document.createElement('dd');
             const Diva = document.createElement('div');
@@ -56,6 +58,10 @@ const skill = {
             Dda.appendChild(Diva);
             
         });
+    },
+
+    sortList: function(sortingType) {
+        
     }
 };
 skill.generateList(document.querySelector("dl.skill-list"));
@@ -66,7 +72,29 @@ sortBtnBlock.addEventListener('click', (e) => {
     let target = e.target;
     console.log(target);
     if (target.nodeName === "BUTTON"){
-        console.log(target);
+        if (skill.isSorted !== target.dataset.type){
+            switch (target.dataset.type){
+                case 'name':
+                    sortByName(skill); break;
+                case 'level':
+                    sortByLevel(skill); break;
+                default:
+                    return;
+            }
+            skill.isSorted = target.dataset.type;
+        } else {
+            skill.data.reverse();
+        }
+        skill.generateList(document.querySelector("dl.skill-list")); 
     } 
 });
+
+function sortByName(s){
+    s.data.sort((a,b) => a.item.localeCompare(b.item));
+};
+
+function sortByLevel(s){
+    s.data.sort((a,b) => b.level - a.level); 
+};
+
 

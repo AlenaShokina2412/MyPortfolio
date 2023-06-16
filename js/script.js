@@ -121,3 +121,28 @@ btn.addEventListener('click', (e) => {
 
 
 menu.close();
+
+const checkbox = document.querySelector(".switch-checkbox");
+checkbox.addEventListener("change", () => {
+    changeTheme(checkbox.checked);
+});
+
+
+const changeTheme = (theme) => {
+    if (theme){
+        document.body.classList.remove('dark-theme');
+    } else {
+        document.body.classList.add('dark-theme');
+    }
+    localStorage.setItem('light-dark-mode-notes', theme);
+}
+
+const lightDarkMode = localStorage.getItem('light-dark-mode-notes');
+
+if (lightDarkMode === null || lightDarkMode === "false") {
+    changeTheme(false);
+    checkbox.checked = false;
+} else {
+    changeTheme(true);
+    checkbox.checked = true;
+}

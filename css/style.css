@@ -460,8 +460,12 @@ p + p {
         width: 30px;
         height: 30px;
         border: 0;
+        border-radius: 0;
+        background-repeat: no-repeat;
     }
-
+    .nav-btn:hover{
+        background-color: transparent; 
+    }
     .nav-btn_close{
         background-image: url(../img/menu-btn/close.svg);
     }

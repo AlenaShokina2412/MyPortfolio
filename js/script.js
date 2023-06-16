@@ -61,7 +61,20 @@ const skill = {
     },
 
     sortList: function(sortingType) {
-        
+        if (this.isSorted !== sortingType){
+            switch (sortingType){
+                case 'name':
+                    sortByName(this); break;
+                case 'level':
+                    sortByLevel(this); break;
+                default:
+                    return;
+            }
+            this.isSorted = sortingType;
+        } else {
+            this.data.reverse();
+        }
+        this.generateList(document.querySelector("dl.skill-list")); 
     }
 };
 skill.generateList(document.querySelector("dl.skill-list"));
@@ -72,20 +85,7 @@ sortBtnBlock.addEventListener('click', (e) => {
     let target = e.target;
     console.log(target);
     if (target.nodeName === "BUTTON"){
-        if (skill.isSorted !== target.dataset.type){
-            switch (target.dataset.type){
-                case 'name':
-                    sortByName(skill); break;
-                case 'level':
-                    sortByLevel(skill); break;
-                default:
-                    return;
-            }
-            skill.isSorted = target.dataset.type;
-        } else {
-            skill.data.reverse();
-        }
-        skill.generateList(document.querySelector("dl.skill-list")); 
+       skill.sortList(target.dataset.type) 
     } 
 });
 
